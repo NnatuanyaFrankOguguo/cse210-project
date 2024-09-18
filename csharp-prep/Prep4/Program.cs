@@ -1,5 +1,6 @@
 using System;
-
+using System.Collections.Generic;
+using System.Linq;
 
 class Program
 
@@ -13,9 +14,11 @@ class Program
         {
             Console.Write("Enter Number: ");
             input = int.Parse(Console.ReadLine());
-            numbers.Add(input);               
+            if (input != 0)
+            {
+                numbers.Add(input);
+            }               
         }
-        numbers.Remove(0);
         float totalSum = numbers.Sum();
         int totalCount = numbers.Count();
         float average = totalSum / totalCount;
