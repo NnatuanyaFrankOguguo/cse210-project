@@ -16,7 +16,7 @@ class Program
 
         while(true) 
         {
-           
+            Console.Clear();
             Console.WriteLine("");
             Console.WriteLine("");
             
