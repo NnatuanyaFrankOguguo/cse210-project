@@ -23,21 +23,5 @@ public class Video
   }
 
 
-
-//   public int TotalComments() 
-//   {
-//     int totalNumber = _comments.Count;
-//     return totalNumber;
-//   }
-
-//   public void GetDisplay()
-//   {
-//     Console.WriteLine($"Title: {_title}\n Author: {_author} \n Length: {_length} \n Comments: {TotalComments()} ");
-//     foreach (Comment comment in _comments)
-//     {
-//         Console.WriteLine($"Name : {comment._name} , Comments: {comment._textComment}");
-//     }
-//   }
-
      
 }
