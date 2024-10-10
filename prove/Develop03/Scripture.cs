@@ -43,7 +43,7 @@ public class Scripture
         return (randomReference, randomScripture); 
     }
 
-     private void InitializeWords(string scripture)
+    private void InitializeWords(string scripture)
     {
         string[] splitWords = scripture.Split(' '); // Split the scripture text into words
 
@@ -54,17 +54,17 @@ public class Scripture
     }
 
 
-    public Scripture(Reference reference, string scriptureTexts = null)
-    {
-        _reference = reference;
-        string textToUse = scriptureTexts ?? RandomScriptureText().scripture; //The ?? operator is called the "null-coalescing operator". It checks if scriptureTexts is null. if yes then the list would show 
-        string[] splitWords = textToUse.Split(' '); // Spliting the scripture texts parameters into words based on present spaces and adding them to an array splitwords 
+    // public Scripture(Reference reference, string scriptureTexts = null)
+    // {
+    //     _reference = reference;
+    //     string textToUse = scriptureTexts ?? RandomScriptureText().scripture; //The ?? operator is called the "null-coalescing operator". It checks if scriptureTexts is null. if yes then the list would show 
+    //     string[] splitWords = textToUse.Split(' '); // Spliting the scripture texts parameters into words based on present spaces and adding them to an array splitwords 
 
-        foreach (string word in splitWords)//looping through the individual word in the splitsword array
-        {
-            _words.Add(new Word(word)); // Create a Word object for each word and add to the list(this is so, that it can be turn to Hidden(__) or show(text) individually while also displaying others)
-        }
-    }
+    //     foreach (string word in splitWords)//looping through the individual word in the splitsword array
+    //     {
+    //         _words.Add(new Word(word)); // Create a Word object for each word and add to the list(this is so, that it can be turn to Hidden(__) or show(text) individually while also displaying others)
+    //     }
+    // }
 
 public void HideRandomWords(int numbersToHide)
 {
